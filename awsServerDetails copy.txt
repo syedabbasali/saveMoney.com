@@ -1,0 +1,2 @@
+Server IP :18.170.111.227
+path to project: /Users/syedabbasali/Desktop/IndividualProject

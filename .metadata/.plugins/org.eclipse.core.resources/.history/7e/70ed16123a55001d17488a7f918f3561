@@ -1,0 +1,21 @@
+package com.saveMoney.application;
+
+public class RegisterGasStation {
+	
+	
+	private String password;
+	private String station_name;
+	private String station_address;
+	private String station_longitutde;
+	private String station_latitude;
+	private int station_crowd;
+	private String station_status;
+	
+	public RegisterGasStation() {
+
+	}
+
+	
+	
+
+}

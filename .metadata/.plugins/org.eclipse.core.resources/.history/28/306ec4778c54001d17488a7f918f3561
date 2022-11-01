@@ -1,0 +1,15 @@
+package com.saveMoney.application;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ApiService {
+	
+	@Autowired
+	SuperMarket sm;
+
+	public void handleRegisterSuperMarket(RegisterSuperMarket rsm) {
+		
+	}
+}

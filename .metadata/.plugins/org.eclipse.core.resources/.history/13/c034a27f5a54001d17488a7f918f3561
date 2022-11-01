@@ -1,0 +1,36 @@
+package com.saveMoney.application;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Application implements CommandLineRunner{
+
+
+	@Autowired
+	SuperMarket sm ;
+	
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+		
+		System.out.println("Hello Springboot");
+	 
+		
+	}
+	@Override
+	public void run(String... args) {
+		
+//		this.sm = new SuperMarket();
+		this.sm.setUsername("TestUSer2");
+		this.sm.setPassword("TestPassword2");
+		this.sm.setShop_name("TestShop2");
+		this.sm.setShop_address("TestAddress2");
+		this.sm.setShop_longitutde("TestLong2");
+		this.sm.setShop_latitude("TestLat2");
+		
+		this.sm.writeSuperMarket();
+	}
+}

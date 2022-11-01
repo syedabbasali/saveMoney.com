@@ -1,0 +1,55 @@
+package com.saveMoney.application;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class RegisterSuperMarket {
+
+	@Autowired
+	SuperMarket sm;
+		
+	private String username;	
+	private String password;
+	private String shop_name;
+	private String shop_address;
+	private String shop_longitutde;
+	private String shop_latitude;
+	private int shop_crowd;
+	private String shop_status;
+
+	
+	
+	public RegisterSuperMarket() {
+		
+	}
+
+	public RegisterSuperMarket(String username, String password, String shop_name, String shop_address,
+			String shop_longitutde, String shop_latitude) {
+		
+		this.username = username;
+		this.password = password;
+		this.shop_name = shop_name;
+		this.shop_address = shop_address;
+		this.shop_longitutde = shop_longitutde;
+		this.shop_latitude = shop_latitude;
+	}
+
+
+
+
+
+
+	public void writeSuperMarket() {
+		
+		sm.setUsername(username);
+		sm.setPassword(password);
+		sm.setShop_name(shop_name); 
+		sm.setShop_address(shop_address);
+		sm.setShop_longitutde(shop_longitutde); 
+		sm.setShop_latitude(shop_latitude);
+		
+		sm.writeSuperMarket();
+	}
+
+}

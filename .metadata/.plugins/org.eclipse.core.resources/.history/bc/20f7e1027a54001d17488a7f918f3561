@@ -1,0 +1,5 @@
+package com.saveMoney.application.service;
+
+public class ApiController {
+
+}

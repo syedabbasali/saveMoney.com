@@ -1,0 +1,14 @@
+Accessing postgres remotely
+
+1)Modify the following file
+	sudo vim /var/lib/pgsql/data/postgresql.conf
+	listen_addresses = '*'
+
+2)Modify the following file
+	sudo vim /var/lib/pgsql/data/pg_hba.conf
+
+	paste following at end of file
+	host    all             all             0.0.0.0/0               trust
+
+	restart postgres
+	sudo systemctl restart postgresql

@@ -1,0 +1,46 @@
+package com.saveMoney.application;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+
+@RestController
+public class ApiController {
+	@Autowired
+	private ApiService aps;
+	
+	
+	//Method for reaching Home using REST API
+	@GetMapping("/home")
+	public String getHome() {
+		return "Welcome to SaveMoney server";
+	}
+	
+	//Method for Registering superMarket
+	@PostMapping("/registersupermarket")
+	public RegisterSuperMarket registersupermarket(@RequestBody RegisterSuperMarket rsm) {
+		aps.handleRegisterSuperMarket(rsm);
+		return rsm; 
+		
+	}
+	
+	//Method for registering GasStation
+	@PostMapping("/registergasstation")
+	public RegisterGasStation registergasstation(@RequestBody RegisterGasStation rgs) {
+		aps.handleRegisterGasStation(rgs);
+		return rgs;
+	}
+	
+	//Method for 
+	@GetMapping(value = "/supermarket/username={username}/count={count}",produces = {"application/json"})
+	public void updatePersonCount(@PathVariable String username, @PathVariable String count) {
+		
+	aps.updatePersonCount(username, Integer.parseInt(count));
+		
+	}
+}
