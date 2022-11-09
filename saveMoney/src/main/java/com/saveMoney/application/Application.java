@@ -25,6 +25,6 @@ public class Application implements CommandLineRunner {
 		abcd.put("Toothbrush", "20");
 		sipr.itemList(abcd,"Abbas");
 		System.out.println(sipr.find("Toothpaste"));
-//		System.out.println("Git changes!!!");
+		System.out.println("Git changes!!!");
 	}
 }
