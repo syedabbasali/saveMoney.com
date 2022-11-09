@@ -7,67 +7,117 @@ import org.springframework.stereotype.Service;
 public class ApiService {
 
 	@Autowired
-	SuperMarket sm;
+	Shops shop;
 
-	@Autowired
-	GasStation gs;
+	public String handleRegisterShop(RegisterShop registershop) {
+		shop.setUsername(registershop.getUsername());
+		shop.setPassword(registershop.getPassword());
+		shop.setShop_type(registershop.getShop_type());
+		shop.setShop_name(registershop.getShop_name());
+		shop.setShop_address(registershop.getShop_address());
+		shop.setShop_postcode(registershop.getShop_postcode());
+		shop.setShop_longitutde(registershop.getShop_latitude());
+		shop.setShop_latitude(registershop.getShop_longitutde());
+		shop.setShop_crowd_flag(registershop.getShop_crowd_flag());
 
-	public void handleRegisterSuperMarket(RegisterSuperMarket rsm) {
-		sm.setUsername(rsm.getUsername());
-		sm.setPassword(rsm.getPassword());
-		sm.setShop_name(rsm.getShop_name());
-		sm.setShop_address(rsm.getShop_address());
-		sm.setShop_longitutde(rsm.getShop_latitude());
-		sm.setShop_latitude(rsm.getShop_longitutde());
-
-		sm.writeSuperMarket();
+		String status = shop.writeShops();
+		return status;
 	}
 
-	public void handleRegisterGasStation(RegisterGasStation rgs) {
-		gs.setUsername(rgs.getUsername());
-		gs.setPassword(rgs.getPassword());
-		gs.setStation_name(rgs.getStation_name());
-		gs.setStation_address(rgs.getStation_address());
-		gs.setStation_longitutde(rgs.getStation_longitutde());
-		gs.setStation_latitude(rgs.getStation_latitude());
+	public String updatePersonCount(String username, int count) {
+		shop.setUsername(username);
+		shop.setShop_crowd(count);
 
-		gs.writeGasStation();
+		String status = shop.updatePersonCount();
+		
+		return status;
 	}
 
-	public void updatePersonCountSuperMarket(String username, int count) {
-		sm.setUsername(username);
-		sm.setShop_crowd(count);
+	public String updateShopStatus(String username, String shop_status) {
+		shop.setUsername(username);
+		shop.setShop_status(shop_status);
 
-		sm.updatePersonCount();
-	}
-
-	public void updateStatusSuperMarket(String username, String shop_status) {
-		sm.setUsername(username);
-		sm.setShop_status(shop_status);
-
-		sm.updateShopStatus();
+		String status = shop.updateShopStatus();
+		return status;
 
 	}
 	
-	public void updatePersonCountGasStation(String username, int count) {
-		gs.setUsername(username);
-		gs.setStation_crowd(count);
-		
-		gs.updatePersonCountGasStation();
-	}
-	
-	public void updateStatusGasStation(String gasStation_name, String gasStationStatus) {
-		gs.setStation_name(gasStation_name);
-		gs.setStation_status(gasStationStatus);
-		
-		gs.updateGasStationStatus();
-		
-	}
-
-	public String getAddressSuperMarket(String username) {
-		sm.setUsername(username);
-		String address = sm.getAddressSuperMarket(username);
+	public String getShopAddress(String username) {
+		shop.setUsername(username);
+		Shops shop_ = shop.getShop(username);
+		String address = shop_.getShop_address();
 		return address;
+	}
+
+	public Shop getShop(String username) {
+		shop.setUsername(username);
+		Shops shops = shop.getShop(username);
+		if( shops== null) {
+			return new Shop();
+		}
+		Shop shop_=new Shop(shops);
+		return shop_;
+	}
+
+	public String getShopPassword(String username) {
+		shop.setUsername(username);
+		Shops shop_ = shop.getShop(username);
+		String password = shop_.getPassword();
+		return password;
+	}
+
+	public String getShopType(String username) {
+		shop.setUsername(username);
+		Shops shop_ = shop.getShop(username);
+		String shop_type = shop_.getShop_type();
+		return shop_type;
+	}
+
+	public String getShopName(String username) {
+		shop.setUsername(username);
+		Shops shop_ = shop.getShop(username);
+		String shop_name = shop_.getShop_name();
+		return shop_name;	}
+
+	public String getShopPostcode(String username) {
+		shop.setUsername(username);
+		Shops shop_ = shop.getShop(username);
+		String shop_postcode = shop_.getShop_postcode();
+		return shop_postcode;	}
+
+	public String getShopLongitude(String username) {
+		shop.setUsername(username);
+		Shops shop_ = shop.getShop(username);
+		String shop_longitude = shop_.getShop_longitutde();
+		return shop_longitude;
+	}
+
+	public String getShopLatitude(String username) {
+		shop.setUsername(username);
+		Shops shop_ = shop.getShop(username);
+		String Shop_latitude = shop_.getShop_latitude();
+		return Shop_latitude;
+	}
+
+	public String getShopCrowdFlag(String username) {
+		shop.setUsername(username);
+		Shops shop_ = shop.getShop(username);
+		String shop_crowd_flag = String.valueOf(shop_.getShop_crowd_flag());
+		return shop_crowd_flag;
+	}
+
+	public String getShopCrowd(String username) {
+		shop.setUsername(username);
+		Shops shop_ = shop.getShop(username);
+		String shop_crowd = String.valueOf(shop_.getShop_crowd());
+		return shop_crowd;
+	}
+
+	public String getShopStatus(String username) {
+		shop.setUsername(username);
+		Shops shop_ = shop.getShop(username);
+		String shop_status = shop_.getShop_status();
+		return shop_status;
 	}
 	
 	

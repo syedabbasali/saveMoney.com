@@ -1,0 +1,74 @@
+package com.saveMoney.application;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ApiService {
+
+	@Autowired
+	Shops shop;
+
+	@Autowired
+	GasStation gs;
+
+	public void handleRegisterShop(RegisterShop registershop) {
+		shop.setUsername(rsm.getUsername());
+		shop.setPassword(rsm.getPassword());
+		shop.setShop_name(rsm.getShop_name());
+		shop.setShop_address(rsm.getShop_address());
+		shop.setShop_longitutde(rsm.getShop_latitude());
+		shop.setShop_latitude(rsm.getShop_longitutde());
+
+		shop.writeSuperMarket();
+	}
+
+	public void handleRegisterGasStation(RegisterGasStation rgs) {
+		gs.setUsername(rgs.getUsername());
+		gs.setPassword(rgs.getPassword());
+		gs.setStation_name(rgs.getStation_name());
+		gs.setStation_address(rgs.getStation_address());
+		gs.setStation_longitutde(rgs.getStation_longitutde());
+		gs.setStation_latitude(rgs.getStation_latitude());
+
+		gs.writeGasStation();
+	}
+
+	public void updatePersonCountSuperMarket(String username, int count) {
+		shop.setUsername(username);
+		shop.setShop_crowd(count);
+
+		shop.updatePersonCount();
+	}
+
+	public void updateStatusSuperMarket(String username, String shop_status) {
+		shop.setUsername(username);
+		shop.setShop_status(shop_status);
+
+		shop.updateShopStatus();
+
+	}
+	
+	public void updatePersonCountGasStation(String username, int count) {
+		gs.setUsername(username);
+		gs.setStation_crowd(count);
+		
+		gs.updatePersonCountGasStation();
+	}
+	
+	public void updateStatusGasStation(String gasStation_name, String gasStationStatus) {
+		gs.setStation_name(gasStation_name);
+		gs.setStation_status(gasStationStatus);
+		
+		gs.updateGasStationStatus();
+		
+	}
+
+	public String getAddressSuperMarket(String username) {
+		shop.setUsername(username);
+		String address = shop.getAddressSuperMarket(username);
+		return address;
+	}
+	
+	
+}

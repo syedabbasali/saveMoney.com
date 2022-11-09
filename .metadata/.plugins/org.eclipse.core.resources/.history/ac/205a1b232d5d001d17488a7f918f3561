@@ -1,0 +1,5 @@
+package com.saveMoney.application;
+
+public class ShopItemPriceRepositoryImpl {
+
+}

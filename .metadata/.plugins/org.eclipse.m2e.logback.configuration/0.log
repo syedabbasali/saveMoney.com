@@ -1548,3 +1548,183 @@ org.eclipse.core.runtime.CoreException: Launch configuration SaveMoneyApplicatio
 2022-10-27 19:03:40,831 [Worker-152: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-10-27 19:03:40,831 [Worker-152: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-10-27 19:03:40,831 [Worker-152: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-02 15:47:05,856 [Worker-299: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:47:05,865 [Worker-299: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:47:05,873 [Worker-299: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-02 15:47:06,290 [Worker-299: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-02 15:47:06,539 [Worker-299: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-02 15:47:06,546 [Worker-299: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-02 15:47:06,547 [Worker-299: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-04 17:40:45,733 [Worker-370: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-04 17:40:45,739 [Worker-370: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-04 17:40:45,742 [Worker-370: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-04 17:40:45,826 [Worker-370: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-04 17:40:45,840 [Worker-370: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-04 17:40:45,840 [Worker-370: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-04 17:40:45,840 [Worker-370: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-04 17:43:17,721 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-04 17:43:17,725 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-04 17:43:17,730 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-04 17:43:17,815 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-04 17:43:17,841 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-04 17:43:17,841 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-04 17:43:17,841 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-04 17:53:00,742 [Worker-370: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-04 17:53:00,746 [Worker-370: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-04 17:53:00,755 [Worker-370: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-04 17:53:00,861 [Worker-370: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-04 17:53:00,891 [Worker-370: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-04 17:53:00,891 [Worker-370: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-04 17:53:00,891 [Worker-370: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-04 18:16:52,267 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-04 18:16:52,271 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-04 18:16:52,275 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-04 18:16:52,436 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-04 18:16:52,450 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-04 18:16:52,450 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-04 18:16:52,450 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-04 18:26:51,294 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-04 18:26:51,301 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-04 18:26:51,306 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-04 18:26:51,389 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-04 18:26:51,399 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-04 18:26:51,399 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-04 18:26:51,399 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-04 18:43:33,059 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-04 18:43:33,065 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-04 18:43:33,068 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-04 18:43:33,203 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-04 18:43:33,215 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-04 18:43:33,215 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-04 18:43:33,216 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-04 18:52:33,847 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-04 18:52:33,850 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-04 18:52:33,853 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-04 18:52:33,960 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-04 18:52:33,970 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-04 18:52:33,970 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-04 18:52:33,971 [Worker-371: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-05 15:10:16,676 [Worker-380: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:10:16,680 [Worker-380: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:10:16,691 [Worker-380: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-05 15:10:16,836 [Worker-380: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-05 15:10:16,875 [Worker-380: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:10:16,875 [Worker-380: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:10:16,875 [Worker-380: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-05 15:13:57,698 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:13:57,706 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:13:57,709 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-05 15:13:57,779 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-05 15:13:57,788 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:13:57,789 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:13:57,789 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-05 15:16:19,649 [Worker-382: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:16:19,652 [Worker-382: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:16:19,655 [Worker-382: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-05 15:16:19,723 [Worker-382: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-05 15:16:19,732 [Worker-382: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:16:19,732 [Worker-382: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:16:19,732 [Worker-382: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-05 15:18:32,600 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:18:32,602 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:18:32,605 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-05 15:18:32,633 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-05 15:18:32,639 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:18:32,639 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:18:32,639 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-05 15:19:21,085 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:19:21,087 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:19:21,089 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-05 15:19:21,128 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-05 15:19:21,132 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:19:21,132 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:19:21,132 [Worker-373: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-05 15:29:24,270 [Worker-384: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:29:24,274 [Worker-384: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:29:24,276 [Worker-384: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-05 15:29:24,365 [Worker-384: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-05 15:29:24,377 [Worker-384: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:29:24,377 [Worker-384: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:29:24,377 [Worker-384: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-05 15:34:44,958 [Worker-382: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:34:44,962 [Worker-382: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:34:44,965 [Worker-382: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-05 15:34:45,103 [Worker-382: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-05 15:34:45,114 [Worker-382: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:34:45,114 [Worker-382: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:34:45,114 [Worker-382: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-05 15:49:54,685 [Worker-386: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:49:54,688 [Worker-386: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:49:54,691 [Worker-386: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-05 15:49:54,802 [Worker-386: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-05 15:49:54,816 [Worker-386: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:49:54,816 [Worker-386: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:49:54,816 [Worker-386: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-05 15:51:10,854 [Worker-386: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:51:10,857 [Worker-386: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:51:10,860 [Worker-386: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-05 15:51:10,939 [Worker-386: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-05 15:51:10,943 [Worker-386: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:51:10,943 [Worker-386: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:51:10,943 [Worker-386: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-05 15:52:46,475 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:52:46,479 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:52:46,482 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-05 15:52:46,512 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-05 15:52:46,515 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 15:52:46,515 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 15:52:46,516 [Worker-369: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-05 16:30:36,900 [Worker-387: Launching Application (1)] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2022-11-05 16:30:37,060 [Worker-387: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 16:30:37,061 [Worker-387: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 16:30:37,065 [Worker-387: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-05 16:30:37,113 [Worker-387: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-05 16:30:37,119 [Worker-387: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 16:30:37,119 [Worker-387: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 16:30:37,119 [Worker-387: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-05 17:16:26,378 [Worker-394: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-11-05 17:16:26,418 [Worker-394: Updating Maven Project] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2022-11-05 17:16:27,476 [Worker-394: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.saveMoney:application:0.0.1-SNAPSHOT @ /Users/syedabbasali/Desktop/IndividualProject/saveMoney/pom.xml.
+2022-11-05 17:16:28,062 [Worker-394: Updating Maven Project] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2022-11-05 17:16:28,401 [Worker-394: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /saveMoney/src/main/java
+2022-11-05 17:16:28,405 [Worker-394: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /saveMoney/src/main/resources
+2022-11-05 17:16:28,406 [Worker-394: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /saveMoney/src/main/resources
+2022-11-05 17:16:28,407 [Worker-394: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /saveMoney/src/test/java
+2022-11-05 17:16:29,696 [Worker-394: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2022-11-05 17:16:33,452 [Worker-389: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/rocksdb/rocksdbjni/6.6.4/rocksdbjni-6.6.4-sources.jar
+2022-11-05 17:16:33,729 [Worker-389: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/rocksdb/rocksdbjni/6.6.4/rocksdbjni-6.6.4-sources.jar
+2022-11-05 17:16:33,878 [Worker-389: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.rocksdb:rocksdbjni:6.6.4
+2022-11-05 17:58:22,449 [Worker-409: Launching Application (1)] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2022-11-05 17:58:22,537 [Worker-409: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 17:58:22,538 [Worker-409: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 17:58:22,540 [Worker-409: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-05 17:58:22,567 [Worker-409: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-05 17:58:22,572 [Worker-409: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 17:58:22,572 [Worker-409: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 17:58:22,572 [Worker-409: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-05 18:22:47,118 [Worker-411: Launching Application (1)] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2022-11-05 18:22:47,167 [Worker-411: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 18:22:47,168 [Worker-411: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 18:22:47,181 [Worker-411: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-05 18:22:47,534 [Worker-411: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-05 18:22:47,557 [Worker-411: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 18:22:47,557 [Worker-411: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 18:22:47,557 [Worker-411: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-05 18:24:22,896 [Worker-413: Launching Application (1)] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2022-11-05 18:24:22,937 [Worker-413: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 18:24:22,938 [Worker-413: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 18:24:22,943 [Worker-413: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-05 18:24:23,067 [Worker-413: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-05 18:24:23,108 [Worker-413: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-05 18:24:23,108 [Worker-413: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-05 18:24:23,108 [Worker-413: Launching Application (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/syedabbasali/Desktop/IndividualProject/saveMoney/src/test/resources
+2022-11-08 18:33:37,291 [Worker-479: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-11-08 18:33:37,347 [Worker-479: Updating Maven Project] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2022-11-08 18:33:38,583 [Worker-479: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.saveMoney:application:0.0.1-SNAPSHOT @ /Users/syedabbasali/Desktop/IndividualProject/saveMoney/pom.xml.
+2022-11-08 18:33:39,923 [Worker-479: Updating Maven Project] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2022-11-08 18:33:40,977 [Worker-479: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /saveMoney/src/main/java
+2022-11-08 18:33:40,986 [Worker-479: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /saveMoney/src/main/resources
+2022-11-08 18:33:40,988 [Worker-479: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /saveMoney/src/main/resources
+2022-11-08 18:33:40,992 [Worker-479: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /saveMoney/src/test/java
+2022-11-08 18:33:42,233 [Worker-479: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2022-11-08 18:38:27,461 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

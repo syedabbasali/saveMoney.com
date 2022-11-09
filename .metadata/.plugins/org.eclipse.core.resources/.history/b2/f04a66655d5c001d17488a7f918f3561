@@ -1,0 +1,50 @@
+package com.saveMoney.application;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ApiController {
+	@Autowired
+	private ApiService apiService;
+
+	// Method for reaching Home using REST API
+	@GetMapping("/savemoney")
+	public String getHome() {
+		return "Welcome to SaveMoney server";
+	}
+
+	// Method for Registering superMarket
+	@PostMapping("/registershop")
+	public String registerShop(@RequestBody RegisterShop registershop) {
+		String status= apiService.handleRegisterShop(registershop);
+		return status;
+	}
+
+	// Method for count of person at SuperMarket
+	@GetMapping(value = "/shop/updatecount/username={username}/count={count}", produces = { "application/json" })
+	public void updatePersonCountSuperMarket(@PathVariable String username, @PathVariable String count) {
+		apiService.updatePersonCountSuperMarket(username, Integer.parseInt(count));
+
+		// Return type should be Error/Success code...!!!!
+	}
+
+	// Method for shop_status at SuperMaÏrket
+	@GetMapping(value = "/shop/updatestatus/username={username}/status={status}", produces = { "application/json" })
+	public String updateStatusSuperMarket(@PathVariable String username, @PathVariable String status) {
+		apiService.updateStatusSuperMarket(username, status);
+		return "data updated successfully!!!!";
+
+	}
+
+	// Method for getting address of user through longitude and latitude
+	@GetMapping(value = "/shop/getaddress/username={username}", produces = { "application/json" })
+	public String getAddressSuperMarket(@PathVariable String username) {
+		String address = apiService.getAddressSuperMarket(username);
+		return address;
+	}
+}

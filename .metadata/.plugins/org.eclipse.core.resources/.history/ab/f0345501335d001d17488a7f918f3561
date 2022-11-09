@@ -1,0 +1,32 @@
+package com.saveMoney.application;
+
+import org.springframework.stereotype.Repository;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Repository
+public class ShopItemPriceRepositoryImpl implements ShopItemPriceRepository<String, String> {
+
+	File dbDir;
+	RocksDB db;
+
+	@Override
+	public void save(String key, String value) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public String find(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(String key) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
