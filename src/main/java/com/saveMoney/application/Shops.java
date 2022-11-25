@@ -2,16 +2,18 @@ package com.saveMoney.application;
 
 import java.util.List;
 
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 @Repository
+@Data
 public class Shops {
 
 	@Autowired
-	private JdbcTemplate jt = new JdbcTemplate();
+	private JdbcTemplate jt;
 
 	private String username;
 	private String password;
@@ -24,30 +26,7 @@ public class Shops {
 	private int shop_crowd_flag;
 	private int shop_crowd;
 	private String shop_status;
-
-	// Constructor
-	public Shops() {
-		this.shop_crowd = 0;
-		this.shop_status = "open";
-	}
-
-	// Constructor with field
-	public Shops(String username, String password, String shop_type, String shop_name, String shop_address,
-			String shop_postcode, String shop_longitutde, String shop_latitude, int shop_crowd_flag) {
-
-		this.username = username;
-		this.password = password;
-		this.shop_type = shop_type;
-		this.shop_name = shop_name;
-		this.shop_address = shop_address;
-		this.shop_postcode = shop_postcode;
-		this.shop_longitutde = shop_longitutde;
-		this.shop_latitude = shop_latitude;
-		this.shop_crowd_flag = shop_crowd_flag;
-	}
-
-	// Getters and setters
-
+	
 	public String getUsername() {
 		return username;
 	}
@@ -135,6 +114,30 @@ public class Shops {
 	public void setShop_status(String shop_status) {
 		this.shop_status = shop_status;
 	}
+
+
+
+	// Constructor
+	public Shops() {
+		this.shop_crowd = 0;
+		this.shop_status = "open";
+	}
+
+	// Constructor with field
+	public Shops(String username, String password, String shop_type, String shop_name, String shop_address,
+			String shop_postcode, String shop_longitutde, String shop_latitude, int shop_crowd_flag) {
+
+		this.username = username;
+		this.password = password;
+		this.shop_type = shop_type;
+		this.shop_name = shop_name;
+		this.shop_address = shop_address;
+		this.shop_postcode = shop_postcode;
+		this.shop_longitutde = shop_longitutde;
+		this.shop_latitude = shop_latitude;
+		this.shop_crowd_flag = shop_crowd_flag;
+	}
+
 
 	public String writeShops() {
 		String query = "INSERT INTO  shops (username,password,shop_type,shop_name,shop_address,shop_postcode,shop_longitutde,shop_latitude,shop_crowd_flag,shop_crowd,shop_status ) VALUES (?,?,?,?,?,?,?,?,?,?,?)";

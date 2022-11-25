@@ -1,7 +1,5 @@
 package com.saveMoney.application;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 
 
 public class RegisterShop {
