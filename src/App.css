@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  color: #fff;
+}
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(39, 214, 170), rgb(23, 160, 251));
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem 0.5rem;
+}
+.header {
+  background-color: rgb(39, 214, 170);
+  color: white;
+  padding: 20px 10px;
+  margin: 1rem;
+  -webkit-box-align: center;
+  font-size: x-large;
+}
+.Nav {
+  color: rgb(39, 214, 170);
+  margin: 5px;
+  display: inline;
+  padding: 8px 16px;
+  font-size: large;
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+}
+section {
+  width: 100%;
+  max-width: 420px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+}
+a,
+a:visited {
+  color: #fff;
+}
+
+input[type="text"],
+input[type="password"],
+button,
+textarea {
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+.instructions {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -2px;
+}
+label {
+  padding: 0.25rem;
+  font-weight: bold;
+}
+.instructions > svg {
+  margin-right: 0.25rem;
+}
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-width: 1px;
+  font-family: "Quicksand";
+  border-radius: 5px;
+  box-shadow: 1px 1px rgb(250, 240, 242);
+  border-left: 5px solid firebrick;
+}
+.line {
+  display: inline-block;
+}
+.radio-toolbar label {
+  display: inline-block;
+  padding: 4px 11px;
+  cursor: pointer;
+  font-weight: normal;
+}
