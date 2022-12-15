@@ -15,7 +15,7 @@
 	<name>application</name>
 	<description>Pg Project</description>
 	<properties>
-		<java.version>11vi</java.version>
+		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -94,7 +94,8 @@
 			<groupId>com.opencsv</groupId>
 			<artifactId>opencsv</artifactId>
 			<version>5.0</version>
-		</dependency>
+		</dependency>		
+		
 	</dependencies>
 	<build>
 		<plugins>

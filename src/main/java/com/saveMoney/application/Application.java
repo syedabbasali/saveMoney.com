@@ -25,6 +25,15 @@ public class Application implements CommandLineRunner {
 		abcd.put("Toothbrush", "20");
 		sipr.itemList(abcd,"Abbas");
 		System.out.println(sipr.find("Toothpaste"));
+//		
+//		Double Latitude = 51.569541;
+//		Double Longitude = -0.377015;
+//		System.out.println(Longitude);
+//		System.out.println(Latitude);
+		
+	
+
+
 		System.out.println("Git changes!!!");
 	}
 }

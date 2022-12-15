@@ -7,31 +7,34 @@ public class Shop {
 	private String shop_name;
 	private String shop_address;
 	private String shop_postcode;
-	private String shop_longitutde;
-	private String shop_latitude;
+	private double shop_longitude;
+	private double shop_latitude;
 	private int shop_crowd_flag;
 	private int shop_crowd;
 	private String shop_status;
+	double distance;
 	
+
 	//Blank constructor
 	public Shop() {
 
 	}
 	//constructor with all the fields
-	public Shop(Shops shops) {
 	
-		this.username = shops.getUsername();
-		this.password = shops.getPassword();
-		this.shop_type = shops.getShop_type();
-		this.shop_name = shops.getShop_name();
-		this.shop_address = shops.getShop_address();
-		this.shop_postcode = shops.getShop_postcode();
-		this.shop_longitutde = shops.getShop_longitutde();
-		this.shop_latitude = shops.getShop_latitude();
-		this.shop_crowd_flag = shops.getShop_crowd_flag();
-		this.shop_crowd = shops.getShop_crowd();
-		this.shop_status = shops.getShop_status();
+	public Shop(String username, String password, String shop_type, String shop_name, String shop_address,
+			String shop_postcode, double shop_longitude, double shop_latitude, int shop_crowd_flag) {
+
+		this.username = username;
+		this.password = password;
+		this.shop_type = shop_type;
+		this.shop_name = shop_name;
+		this.shop_address = shop_address;
+		this.shop_postcode = shop_postcode;
+		this.shop_longitude = shop_longitude;
+		this.shop_latitude = shop_latitude;
+		this.shop_crowd_flag = shop_crowd_flag;
 	}
+
 
 	// Getters and setters
 	public String getUsername() {
@@ -82,19 +85,19 @@ public class Shop {
 		this.shop_postcode = shop_postcode;
 	}
 
-	public String getShop_longitutde() {
-		return shop_longitutde;
+	public double getShop_longitude() {
+		return shop_longitude;
 	}
 
-	public void setShop_longitutde(String shop_longitutde) {
-		this.shop_longitutde = shop_longitutde;
+	public void setShop_longitude(double shop_longitude) {
+		this.shop_longitude = shop_longitude;
 	}
 
-	public String getShop_latitude() {
+	public double getShop_latitude() {
 		return shop_latitude;
 	}
 
-	public void setShop_latitude(String shop_latitude) {
+	public void setShop_latitude(double shop_latitude) {
 		this.shop_latitude = shop_latitude;
 	}
 
@@ -121,5 +124,11 @@ public class Shop {
 	public void setShop_status(String shop_status) {
 		this.shop_status = shop_status;
 	}
+	public double getDistance() {
+		return distance;
+	}
 
+	public void setDistance(double distance) {
+		this.distance = distance;
+	}
 }
