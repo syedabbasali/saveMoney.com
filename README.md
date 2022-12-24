@@ -221,5 +221,5 @@ Use this space to list resources you find helpful and would like to give credit 
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=008921
 [JQuery-url]: https://jquery.com 
-[Springboot.com]: https://img.shields.io/badge/springboot-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Springboot.com]: https://img.shields.io/badge/springboot-563D7C?style=for-the-badge&logo=springboot&logoColor=09A837
 [Springboot-url]: https://spring.io/projects/spring-boot
