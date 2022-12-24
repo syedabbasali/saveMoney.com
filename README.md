@@ -62,7 +62,7 @@ Use the `BLANK_README.md` to get started.
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [![React][React.js]][React-url]
-*  [![Springboot][Springboot.com]][[Springboot-url]
+* [![Springboot][Springboot.com]][Springboot-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
 
@@ -221,5 +221,5 @@ Use this space to list resources you find helpful and would like to give credit 
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=008921
 [JQuery-url]: https://jquery.com 
-[Springboot.com]: https://img.shields.io/badge/springboot-09A837?style=for-the-badge&logo=springboot&logoColor=09A837
+[Springboot.com]: https://img.shields.io/badge/springboot-09A837?style=for-the-badge&logo=springboot&logoColor=white
 [Springboot-url]: https://spring.io/projects/spring-boot
