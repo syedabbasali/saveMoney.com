@@ -64,7 +64,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [![React][React.js]][React-url]
 * [![Springboot][Springboot.com]][Springboot-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+<!-- * [![JQuery][JQuery.com]][JQuery-url] -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -204,7 +204,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/saveMoney.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
