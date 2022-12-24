@@ -92,9 +92,9 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Below is an example of how you run you application locally by installing and setting up your app. 
 
-1. Get a free API Key at [https://example.com](https://example.com)
+<!-- 1. Get a free API Key at [https://example.com](https://example.com) -->
 2. Clone the repo
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
