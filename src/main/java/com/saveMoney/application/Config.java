@@ -1,5 +1,6 @@
 package com.saveMoney.application;
 
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 //import org.springframework.boot.context.properties.ConfigurationProperties;
 //import org.springframework.boot.jdbc.DataSourceBuilder;
 //import org.springframework.context.annotation.Bean;
@@ -14,6 +15,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableWebMvc
+@EnableAutoConfiguration
 public class Config implements WebMvcConfigurer {
 
     @Override

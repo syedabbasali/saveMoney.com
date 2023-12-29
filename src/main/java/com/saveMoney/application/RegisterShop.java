@@ -11,8 +11,8 @@ public class RegisterShop {
 	private String shop_name;
 	private String shop_address;
 	private String shop_postcode;
-	private String shop_longitutde;
-	private String shop_latitude;
+	private double shop_longitude;
+	private double shop_latitude;
 	private int shop_crowd_flag;
 	private int shop_crowd;
 	private String shop_status;
@@ -22,7 +22,7 @@ public class RegisterShop {
 	}
 
 	public RegisterShop(String username, String password, String shop_type, String shop_name, String shop_address,
-			String shop_postcode, String shop_longitutde, String shop_latitude, String shop_crowd_flag) {
+			String shop_postcode, double shop_longitude, double shop_latitude, String shop_crowd_flag) {
 		super();
 		this.username = username;
 		this.password = password;
@@ -30,7 +30,7 @@ public class RegisterShop {
 		this.shop_name = shop_name;
 		this.shop_address = shop_address;
 		this.shop_postcode = shop_postcode;
-		this.shop_longitutde = shop_longitutde;
+		this.shop_longitude = shop_longitude;
 		this.shop_latitude = shop_latitude;
 		this.shop_crowd_flag = Integer.parseInt(shop_crowd_flag);
 	}
@@ -83,19 +83,19 @@ public class RegisterShop {
 		this.shop_postcode = shop_postcode;
 	}
 
-	public String getShop_longitutde() {
-		return shop_longitutde;
+	public double getShop_longitude() {
+		return shop_longitude;
 	}
 
-	public void setShop_longitutde(String shop_longitutde) {
-		this.shop_longitutde = shop_longitutde;
+	public void setShop_longitude(double shop_longitude) {
+		this.shop_longitude = shop_longitude;
 	}
 
-	public String getShop_latitude() {
+	public double getShop_latitude() {
 		return shop_latitude;
 	}
 
-	public void setShop_latitude(String shop_latitude) {
+	public void setShop_latitude(double shop_latitude) {
 		this.shop_latitude = shop_latitude;
 	}
 
