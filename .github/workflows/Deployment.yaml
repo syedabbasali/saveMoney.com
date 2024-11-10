@@ -1,0 +1,59 @@
+name: Java CI with Maven
+ env:
+   IMAGE_TAG: ${{ github.sha }}
+   REPO_NAME: savemoney-be
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger on pull request to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Use the latest version of Ubuntu for the environment
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # Check out the code from the repository
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2  # Set up Java environment
+        with:
+          java-version: '11'  # Specify Java 11
+          distribution: 'temurin'  # Use Eclipse Adoptium (formerly AdoptOpenJDK)
+          java-package: 'jdk'  # Install JDK (not JRE)
+          architecture: 'x64'  # Architecture type (64-bit)
+          check-latest: false  # Do not check for the latest version
+          server-id: 'github'  # Use GitHub repository for server credentials
+          server-username: ${{ github.actor }}  # GitHub actor (username)
+          server-password: ${{ github.token }}  # GitHub token for authentication
+          overwrite-settings: true  # Overwrite existing settings if they exist
+          job-status: 'success'  # Set job status to success if the task completes successfully
+
+      - name: Build with Maven
+        run: mvn clean install -DskipTests=true  # Compile and package the application, skipping tests
+
+      - name: Run tests
+          run: mvn test  # Run the unit tests to verify functionality
+
+      - name: build docker image
+               run: docker build . --tag abbasabs/${{env.REPO_NAME}}:${{ env.IMAGE_TAG }}
+
+             - name: login to docker hub
+               run: docker login -u abbasabs -p Javascript1@
+
+             - name: push to docker hub
+               run: docker push abbasabs/${{env.REPO_NAME}}:${{ env.IMAGE_TAG }}
+
+             - name: Pull docker image file to EC2
+               uses: appleboy/ssh-action@master
+               with:
+                 host: ${{ secrets.EC2_Public_IP}}
+                 username: ec2-user
+                 key: ${{ secrets.SSH_KEY_SECRET }}
+                 script: |
+                   sudo systemctl start docker
+                   sudo docker pull abbasabs/${{env.REPO_NAME}}:${{ env.IMAGE_TAG }}
+                   sudo docker run -d abbasabs/${{env.REPO_NAME}}:${{ env.IMAGE_TAG }}
