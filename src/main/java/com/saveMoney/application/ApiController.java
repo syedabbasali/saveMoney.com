@@ -37,17 +37,17 @@ public class ApiController {
 	@PostMapping("/registershop")
 	public String registerShop(@RequestBody RegisterShop registershop) {
 		String status;
-		String returnCode = " (CODE 409)" ;
+//		String returnCode = " (CODE 409)" ;
 		//registershop.setPassword("let there be wind");
 		System.out.println("Lets see what we got "+ registershop.getPassword());
 		try {
 			status = apiService.handleRegisterShop(registershop);
 		} catch (Exception e) {
 			status = e.getMessage();
-			returnCode = " (CODE 409)";
+//			returnCode = " (CODE 409)";
 		}
-		System.out.println(status + returnCode);
-		return status + returnCode;
+		System.out.println(status );
+		return status ;
 	}
 
 	// Method for count of person at SuperMarket
@@ -56,7 +56,7 @@ public class ApiController {
 	public String updatePersonCount(@PathVariable String username, @PathVariable String count) {
 		String status;
 		try {
-			status = apiService.updatePersonCount(username, Integer.parseInt(count));
+			status = apiService.updatePersonCount(username, count);
 		} catch (Exception e) {
 			status = e.getMessage();
 		}
@@ -64,58 +64,58 @@ public class ApiController {
 	}
 
 	// Method for shop_status at SuperMaÏrket
-	@PostMapping(value = "/shop/update_shop_status/username={username}/status={status}", produces = {
+	@PostMapping(value = "/shop/update_shop_status/username={username}/password={password}/status={status}", produces = {
 			"application/json" })
-	public String updateShopStatus(@PathVariable String username, @PathVariable String status) {
+	public String updateShopStatus(@PathVariable String username,@PathVariable String password, @PathVariable String status) {
 		String return_status;
 		try {
-			return_status = apiService.updateShopStatus(username, status);
+			return_status = apiService.updateShopStatus(username,password, status);
 		} catch (Exception e) {
 			return_status = e.getMessage();
 		}
 		return return_status;
 	}
 
-	@GetMapping(value = "/shop/get_shop/username={username}", produces = { "application/json" })
-	public Shop getShop(@PathVariable String username) {
+	@GetMapping(value = "/shop/get_shop/username={username}/password={password}", produces = { "application/json" })
+	public Shop getShop(@PathVariable String username,@PathVariable String password) {
 		try {
-			Shop shop = apiService.getShop(username);
-			System.out.print(shop.getUsername());
+			Shop shop = apiService.getShop(username,password);
+			System.out.println(shop.getUsername());
 			return shop;
 		} catch (Exception e) {
-			System.out.print("abcd");
+			System.out.println(e.getMessage());
 			return null;
 		}
 
 	}
 
-	@GetMapping(value = "/shop/get_shop_password/username={username}", produces = { "application/json" })
-	public String getShopPassword(@PathVariable String username) {
+//	@GetMapping(value = "/shop/get_shop_password/username={username}/password={password}", produces = { "application/json" })
+//	public String getShopPassword(@PathVariable String username,@PathVariable String password) {
+//		String result;
+//		try {
+//			result = apiService.getShopPassword(username,password);
+//		} catch (Exception e) {
+//			result = e.getMessage();
+//		}
+//		return result;
+//	}
+
+	@GetMapping(value = "/shop/get_shop_type/username={username}/password={password}", produces = { "application/json" })
+	public String getShopType(@PathVariable String username,@PathVariable String password) {
 		String result;
 		try {
-			result = apiService.getShopPassword(username);
+			result = apiService.getShopType(username,password);
 		} catch (Exception e) {
 			result = e.getMessage();
 		}
 		return result;
 	}
 
-	@GetMapping(value = "/shop/get_shop_type/username={username}", produces = { "application/json" })
-	public String getShopType(@PathVariable String username) {
+	@GetMapping(value = "/shop/get_shop_name/username={username}/password={password}", produces = { "application/json" })
+	public String getShopName(@PathVariable String username,@PathVariable String password) {
 		String result;
 		try {
-			result = apiService.getShopType(username);
-		} catch (Exception e) {
-			result = e.getMessage();
-		}
-		return result;
-	}
-
-	@GetMapping(value = "/shop/get_shop_name/username={username}", produces = { "application/json" })
-	public String getShopName(@PathVariable String username) {
-		String result;
-		try {
-			result = apiService.getShopName(username);
+			result = apiService.getShopName(username,password);
 		} catch (Exception e) {
 			result = e.getMessage();
 		}
@@ -123,55 +123,55 @@ public class ApiController {
 	}
 
 	// Method for getting address of user through longitude and latitude
-	@GetMapping(value = "/shop/get_shop_address/username={username}", produces = { "application/json" })
-	public String getShopAddress(@PathVariable String username) {
+	@GetMapping(value = "/shop/get_shop_address/username={username}/password={password}", produces = { "application/json" })
+	public String getShopAddress(@PathVariable String username,@PathVariable String password) {
 		String result;
 		try {
-			result = apiService.getShopAddress(username);
+			result = apiService.getShopAddress(username,password);
 		} catch (Exception e) {
 			result = e.getMessage();
 		}
 		return result;
 	}
 
-	@GetMapping(value = "/shop/get_shop_postcode/username={username}", produces = { "application/json" })
-	public String getShopPostcode(@PathVariable String username) {
+	@GetMapping(value = "/shop/get_shop_postcode/username={username}/password={password}", produces = { "application/json" })
+	public String getShopPostcode(@PathVariable String username,@PathVariable String password) {
 		String result;
 		try {
-			result = apiService.getShopPostcode(username);
+			result = apiService.getShopPostcode(username,password);
 		} catch (Exception e) {
 			result = e.getMessage();
 		}
 		return result;
 	}
 
-	@GetMapping(value = "/shop/get_shop_longitude/username={username}", produces = { "application/json" })
-	public String getShopLongitude(@PathVariable String username) {
+	@GetMapping(value = "/shop/get_shop_longitude/username={username}/password={password}", produces = { "application/json" })
+	public String getShopLongitude(@PathVariable String username,@PathVariable String password) {
 		String result;
 		try {
-			result = apiService.getShopLongitude(username);
+			result = apiService.getShopLongitude(username,password);
 		} catch (Exception e) {
 			result = e.getMessage();
 		}
 		return result;
 	}
 
-	@GetMapping(value = "/shop/get_shop_latitude/username={username}", produces = { "application/json" })
-	public String getShopLatitude(@PathVariable String username) {
+	@GetMapping(value = "/shop/get_shop_latitude/username={username}/password={password}", produces = { "application/json" })
+	public String getShopLatitude(@PathVariable String username,@PathVariable String password) {
 		String result;
 		try {
-			result = apiService.getShopLatitude(username);
+			result = apiService.getShopLatitude(username,password);
 		} catch (Exception e) {
 			result = e.getMessage();
 		}
 		return result;
 	}
 
-	@GetMapping(value = "/shop/get_shop_crowd_flag/username={username}", produces = { "application/json" })
-	public String getShopCrowdFlag(@PathVariable String username) {
+	@GetMapping(value = "/shop/get_shop_crowd_flag/username={username}/password={password}", produces = { "application/json" })
+	public String getShopCrowdFlag(@PathVariable String username,@PathVariable String password) {
 		String result;
 		try {
-			result = apiService.getShopCrowdFlag(username);
+			result = apiService.getShopCrowdFlag(username,password);
 		} catch (Exception e) {
 			result = e.getMessage();
 		}
@@ -189,11 +189,11 @@ public class ApiController {
 		return result;
 	}
 
-	@GetMapping(value = "/shop/get_shop_status/username={username}", produces = { "application/json" })
-	public String getShopStatus(@PathVariable String username) {
+	@GetMapping(value = "/shop/get_shop_status/username={username}/password={password}", produces = { "application/json" })
+	public String getShopStatus(@PathVariable String username, @PathVariable String password) {
 		String result;
 		try {
-			result = apiService.getShopStatus(username);
+			result = apiService.getShopStatus(username,password);
 		} catch (Exception e) {
 			result = e.getMessage();
 		}
@@ -217,12 +217,22 @@ public class ApiController {
 //				// TODO Auto-generated catch block
 //				e.printStackTrace();
 //			}
+	
+	@GetMapping(value = "/shop/get_nearby_shops/longitude={longitude}/latitude={latitude}/postcode={postcode}/item={item}/shop_type={shop_type}", produces = { "application/json" })
+	public List<Shop> getNearbyShops(@PathVariable String longitude,@PathVariable String latitude,@PathVariable String postcode,@PathVariable String item, @PathVariable String shop_type) {
+		try {
+			List<Shop> shops = apiService.getNearByShops(longitude,latitude,postcode,item,shop_type);
+			return shops;
+		} catch (Exception e) {
+			System.out.print("abcd");
+			return null;
+		}
 
-	        
-		
-		
-		
-		
+	}
+	
+	
+	
+	
 		
 //		 System.out.println(file.getName());
 		 
