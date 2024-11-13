@@ -36,7 +36,7 @@ jobs:
         run: mvn clean install -DskipTests=true  # Compile and package the application, skipping tests
 
       - name: Run tests
-          run: mvn test  # Run the unit tests to verify functionality
+          run: mvn test  # Run the unit tests to verify the functionality
 
       - name: build docker image
                run: docker build . --tag abbasabs/${{env.REPO_NAME}}:${{ env.IMAGE_TAG }}
