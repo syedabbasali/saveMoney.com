@@ -1,7 +1,9 @@
 name: Java CI with Maven
- env:
-   IMAGE_TAG: ${{ github.sha }}
-   REPO_NAME: savemoney-be
+
+env:
+  IMAGE_TAG: ${{ github.sha }}
+  REPO_NAME: save-money-be
+
 on:
   push:
     branches:
@@ -25,35 +27,29 @@ jobs:
           distribution: 'temurin'  # Use Eclipse Adoptium (formerly AdoptOpenJDK)
           java-package: 'jdk'  # Install JDK (not JRE)
           architecture: 'x64'  # Architecture type (64-bit)
-          check-latest: false  # Do not check for the latest version
-          server-id: 'github'  # Use GitHub repository for server credentials
-          server-username: ${{ github.actor }}  # GitHub actor (username)
-          server-password: ${{ github.token }}  # GitHub token for authentication
-          overwrite-settings: true  # Overwrite existing settings if they exist
-          job-status: 'success'  # Set job status to success if the task completes successfully
 
       - name: Build with Maven
         run: mvn clean install -DskipTests=true  # Compile and package the application, skipping tests
 
       - name: Run tests
-          run: mvn test  # Run the unit tests to verify the functionality
+        run: mvn test  # Run the unit tests to verify the functionality
 
-      - name: build docker image
-               run: docker build . --tag abbasabs/${{env.REPO_NAME}}:${{ env.IMAGE_TAG }}
+      - name: Build Docker image
+        run: docker build . --tag abbasabs/${{ env.REPO_NAME }}:${{ env.IMAGE_TAG }}
 
-             - name: login to docker hub
-               run: docker login -u abbasabs -p Javascript1@
+      - name: Login to Docker Hub
+        run: echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login -u abbasabs --password-stdin
 
-             - name: push to docker hub
-               run: docker push abbasabs/${{env.REPO_NAME}}:${{ env.IMAGE_TAG }}
+      - name: Push Docker image to Docker Hub
+        run: docker push abbasabs/${{ env.REPO_NAME }}:${{ env.IMAGE_TAG }}
 
-             - name: Pull docker image file to EC2
-               uses: appleboy/ssh-action@master
-               with:
-                 host: ${{ secrets.EC2_Public_IP}}
-                 username: ec2-user
-                 key: ${{ secrets.SSH_KEY_SECRET }}
-                 script: |
-                   sudo systemctl start docker
-                   sudo docker pull abbasabs/${{env.REPO_NAME}}:${{ env.IMAGE_TAG }}
-                   sudo docker run -d abbasabs/${{env.REPO_NAME}}:${{ env.IMAGE_TAG }}
+      - name: Deploy Docker image to EC2
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.EC2_PUBLIC_IP }}
+          username: ec2-user
+          key: ${{ secrets.SSH_KEY_SECRET }}
+          script: |
+            sudo systemctl start docker
+            sudo docker pull abbasabs/${{ env.REPO_NAME }}:${{ env.IMAGE_TAG }}
+            sudo docker run -d --name save-money-be -p 8080:8080 abbasabs/${{ env.REPO_NAME }}:${{ env.IMAGE_TAG }}
