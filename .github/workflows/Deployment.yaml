@@ -33,7 +33,10 @@ jobs:
 
       - name: Run tests
         run: mvn test  # Run the unit tests to verify the functionality
-
+Jobs:
+  build:
+    runs-on: ubuntu-latest  # Use the latest version of Ubuntu for the environment
+    steps:
       - name: Build Docker image
         run: docker build . --tag abbasabs/${{ env.REPO_NAME }}:${{ env.IMAGE_TAG }}
 
