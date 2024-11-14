@@ -62,5 +62,5 @@ jobs:
           key: ${{ secrets.SSH_KEY_SECRET }}
           script: |
             sudo systemctl start docker
-            sudo docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.REPO_NAME }}:${{ env.IMAGE_TAG }}
-            sudo docker run -d --name save-money-be -p 8080:8080 ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.REPO_NAME }}:${{ env.IMAGE_TAG }}
+            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/${{ env.REPO_NAME }}:${{ env.IMAGE_TAG }}
+            sudo docker run -d --name save-money-be -p 8080:8080 ${{ secrets.DOCKER_USERNAME }}/${{ env.REPO_NAME }}:${{ env.IMAGE_TAG }}
