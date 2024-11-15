@@ -3,6 +3,8 @@ name: Java CI with Maven and Docker
 env:
   IMAGE_TAG: ${{ github.sha }}
   REPO_NAME: save-money-be
+  LATEST_TAG: latest
+  STABLE_TAG: stable
 
 on:
   push:
@@ -41,16 +43,21 @@ jobs:
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
       - name: Build Docker image
-        run: docker build . --tag ${{ secrets.DOCKER_USERNAME }}/${{ env.REPO_NAME }}:${{ env.IMAGE_TAG }}
+        run: docker build . --tag ${{ secrets.DOCKER_USERNAME }}/${{ env.REPO_NAME }}:${{ env.IMAGE_TAG }} --tag ${{ secrets.DOCKER_USERNAME }}/${{ env.REPO_NAME }}:${{ env.LATEST_TAG }}
 
       - name: Push Docker image to Docker Hub
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/${{ env.REPO_NAME }}:${{ env.IMAGE_TAG }}
+        run: |
+          docker push ${{ secrets.DOCKER_USERNAME }}/${{ env.REPO_NAME }}:${{ env.IMAGE_TAG }}
+          docker push ${{ secrets.DOCKER_USERNAME }}/${{ env.REPO_NAME }}:${{ env.LATEST_TAG }}
 
   deploy:
     runs-on: ubuntu-latest
     needs: docker  # Ensures the deploy job runs after the docker job
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
       - name: Deploy Docker image to EC2
         uses: appleboy/ssh-action@master
         with:
@@ -58,6 +65,35 @@ jobs:
           username: ec2-user
           key: ${{ secrets.SSH_KEY_SECRET }}
           script: |
+            # Start Docker service if it's not running
             sudo systemctl start docker
-            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/${{ env.REPO_NAME }}:${{ env.IMAGE_TAG }}
-            sudo docker run -d --name save-money-be -p 8080:8080 ${{ secrets.DOCKER_USERNAME }}/${{ env.REPO_NAME }}:${{ env.IMAGE_TAG }}
+
+            # Pull the latest Docker image (either the new one or the "latest" tag)
+            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/${{ env.REPO_NAME }}:${{ env.LATEST_TAG }}
+
+            # Check if a container named "save-money-be" already exists
+            if sudo docker ps -a --filter "name=save-money-be" --format '{{.Names}}' | grep -q "save-money-be"; then
+              echo "Stopping the existing container..."
+              sudo docker stop save-money-be
+              sudo docker rename save-money-be save-money-be-old
+            fi
+
+            # Run the new container with the latest image
+            sudo docker run -d --name save-money-be -p 8080:8080 ${{ secrets.DOCKER_USERNAME }}/${{ env.REPO_NAME }}:${{ env.LATEST_TAG }}
+
+            # Check if the container is running
+            if ! sudo docker ps --filter "name=save-money-be" --format '{{.Names}}' | grep -q "save-money-be"; then
+              echo "New container failed to start. Rolling back to the previous container..."
+              # Stop and remove the new container
+              sudo docker stop save-money-be
+              sudo docker rm save-money-be
+              # Rename the old container back to "save-money-be"
+              sudo docker rename save-money-be-old save-money-be
+              # Restart the old container
+              sudo docker start save-money-be
+              exit 1  # Exit with error to indicate failure
+            fi
+
+            echo "Deployment successful. Cleaning up old container..."
+            # Remove the old container after successful deployment
+            sudo docker rm save-money-be-old
