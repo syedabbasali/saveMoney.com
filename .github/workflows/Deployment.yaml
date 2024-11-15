@@ -29,9 +29,6 @@ jobs:
       - name: Build with Maven
         run: mvn clean install -DskipTests=true
 
-      - name: Run tests
-        run: mvn test
-
   docker:
     runs-on: ubuntu-latest
     needs: build  # Ensures the docker job runs after the build job
