@@ -11,7 +11,7 @@ public class WebConfig {
     public void addCorsMappings(CorsRegistry registry) {
         // Allow CORS for frontend URL and backend IP
         registry.addMapping("/**")
-                .allowedOrigins("https://main.dq4ijv1k6d839.amplifyapp.com", "http://35.75.22.169")
+                .allowedOrigins("https://main.dq4ijv1k6d839.amplifyapp.com", "http://35.77.4.84/", "http://35.77.4.84:8080")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true);
